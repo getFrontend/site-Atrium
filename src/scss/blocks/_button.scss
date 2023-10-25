@@ -1,0 +1,26 @@
+.button {
+  min-width: 135px;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #1E3C72 0%, #2A5298 100%);
+
+  &__img {
+    flex-shrink: 0;
+    width: 19px;
+    height: 18px;
+  }
+
+  &__text {
+    color: var(--text-color-light);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-wrap: nowrap;
+  }
+}

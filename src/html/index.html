@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
   <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <title>Penzión ÁTRIUM, Prešov</title>
   <link rel="stylesheet" href="./css/main.css">
   <script type="module" src="./js/index.bundle.js"></script>
@@ -18,7 +19,13 @@
 
   @@include('blocks/header.html')
 
-  @@include('blocks/main.html')
+  <main class="main">
+    @@include('blocks/hero.html')
+
+    @@include('blocks/carousel.html')
+
+    @@include('blocks/our-amenities.html')
+  </main>
 
   @@include('blocks/footer.html')
 

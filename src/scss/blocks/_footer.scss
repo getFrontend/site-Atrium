@@ -1,6 +1,39 @@
 .footer {
-  padding-block: 30px;
-  background-color: #0B3142;
+  padding-block: 42px;
+  background-color: #414141;
   color: #fff;
-  text-align: center;
+
+  &__container {
+    padding-inline: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  // &__logo {}
+
+  &__logo-img {
+    max-width: 116px;
+    height: auto;
+  }
+
+  &__social-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__adress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
 }

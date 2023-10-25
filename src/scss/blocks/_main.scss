@@ -1,4 +1,7 @@
 .main{
+  padding-block: 32px;
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
-  background-color: #ECF4F8;
+  gap: 32px;
 }
