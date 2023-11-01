@@ -8,8 +8,8 @@ body {
   display: flex;
   flex-direction: column;
 
-  background-color: var(--page-bg);
-  color: var(--text-color-dark);
+  background-color: var(--color-bg);
+  color: var(--black);
 
   font-family: var(--font-main);
   font-size: var(--font-size);
@@ -26,18 +26,35 @@ body {
 }
 
 .title {
-  font-size: 52px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.subtitle {
-  color: var(--text-color-dark);
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+.title-1 {
+  padding-block: 30px;
+  font-size: var(--heading-1);
+  text-align: center;
+}
+
+.title-2 {
+  font-size: var(--heading-2);
+}
+
+.title-3 {
+font-size: var(--heading-3);
+}
+
+.title-4 {
+font-size: var(--heading-4);
+}
+
+.title-5 {
+font-size: var(--heading-5);
+}
+
+.title-6 {
+font-size: var(--heading-6);
 }
 
 .text-gradient {

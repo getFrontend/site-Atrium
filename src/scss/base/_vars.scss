@@ -1,14 +1,23 @@
 :root {
-  --container-width: 1280px;
+	--container-width: 1280px;
 	--container-padding: 54px;
 
 	--font-main: 'Urbanist', sans-serif;
 	--font-size: 17px;
 
+	--heading-1: 52px;
+	--heading-2: 43px;
+	--heading-3: 36px;
+	--heading-4: 30px;
+	--heading-5: 25px;
+	--heading-6: 21px;
+
 	--color-bg: #fff;
 	--text-color-light: #fff;
-	--text-color-dark: #414141;
-	--color-primary: #FF6A00;
-	--color-secondary: #FB6231;
-	--color-border: #FB9953;
+	--black: #414141;
+	--blue: #253871;
+	// --text-color-dark: #414141;
+	// --color-primary: #FF6A00;
+	// --color-secondary: #FB6231;
+	// --color-border: #FB9953;
 }
