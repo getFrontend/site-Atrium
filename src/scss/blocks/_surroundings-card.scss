@@ -1,0 +1,23 @@
+.surroundings-card {
+  padding-block: 16px;
+  display: flex;
+  gap: 80px;
+
+  &__img {
+    min-width: 359px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding-block: 33px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 24px;
+  }
+
+  &__content-text {
+    max-width: 658px;
+  }
+}
