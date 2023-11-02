@@ -1,0 +1,25 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+		&__card {
+      padding: 16px 41px;
+      display: flex;
+      align-items: center;
+      gap: 80px;
+
+      p + p {
+        margin-top: 24px;
+      }
+		}
+
+		&__picture {
+		}
+
+		&__picture-img {
+		}
+
+		&__content {
+		}
+}
