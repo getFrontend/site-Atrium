@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/favicon/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Penzión ÁTRIUM, Prešov</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <script type="module" src="./js/index.bundle.js"></script>
+</head>
+
+<body>
+
+  @@include('blocks/header.html')
+
+  <main class="main">
+
+    <section class="contact">
+      <div class="container">
+        <h1 class="title title-1">
+          Contact Us
+        </h1>
+        <div class="contact__content">
+          <div class="contact__map">
+            Map
+          </div>
+          <form class="form contact__form" action="">
+            <h3 class="title title-5">Leave Us A Message</h3>
+            <label class="form__label">
+              <span class="bold">Your name</span>
+              <input class="form__input" name="name" type="text" placeholder="Write your name here" autocomplete="off">
+            </label>
+            <label class="form__label">
+              <span class="bold">Your email</span>
+              <input class="form__input" name="email" type="email" placeholder="Write your email here"
+                autocomplete="off">
+            </label>
+            <label class="form__label">
+              <span class="bold">Message</span>
+              <textarea class="form__textarea" name="message" id="" cols="30" rows="10" placeholder="Write your text here"></textarea>
+            </label>
+          </form>
+          <div class="contact__details">
+            <h3 class="title title-5">Contact Details</h3>
+            <div class="contacts">
+              <ul class="contacts__adress">
+                <li><span class="bold">Pension Atrium</span></li>
+                <li>Žižkova 504<br>
+                  541 01 - Trutnov</li>
+                <li>50°33'39.393"N,<br>
+                  15°54'15.424"E</li>
+              </ul>
+              <ul class="contacts__web">
+                <li><span class="bold">Zdeněk Plecháč</span></li>
+                <li>penzionatrium@seznam.cz<br>
+                  plechac@zskomtu.cz</li>
+                <li>tel.: (+420) 731 415 455<br>
+                  www.penziontrutnov.cz</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @@include('blocks/footer.html')
+
+</body>
+
+</html>
