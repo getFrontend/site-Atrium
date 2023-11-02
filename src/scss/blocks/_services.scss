@@ -1,25 +1,71 @@
 .services {
+  
+  &__container { 
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__card {
+    padding: 16px 41px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+
+  &__picture {
+    --path-to-image: ;
+    width: 359px;
+    height: 437px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--path-to-image) lightgray 50% / cover no-repeat;
+
+    &_one {
+      --path-to-image: url(../../img/services/services-foto-01.jpg);
+    }
+
+    &_two {
+      --path-to-image: url(../../img/services/services-foto-02.jpg);
+    }
+
+    &_three {
+      --path-to-image: url(../../img/services/services-foto-03.jpg);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 24px;
+
+    &_meal {
+      padding-block: 33px;
+    }
+
+    // p+p {
+    //   margin-top: 24px;
+    // }
+  }
+}
+
+
+.table-meals {
+  width: 180px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
 
-		&__card {
-      padding: 16px 41px;
-      display: flex;
-      align-items: center;
-      gap: 80px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-      p + p {
-        margin-top: 24px;
-      }
-		}
-
-		&__picture {
-		}
-
-		&__picture-img {
-		}
-
-		&__content {
-		}
+  &__item {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
 }

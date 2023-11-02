@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/favicon/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Penzión ÁTRIUM, Prešov</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <script type="module" src="./js/index.bundle.js"></script>
+</head>
+
+<body>
+
+  @@include('blocks/header.html')
+
+  <main class="main">
+
+    <section class="accommodation">
+      <div class="container">
+        <h1 class="title title-1">
+          Our Accomodation
+        </h1>
+        <div class="box__cards">
+          <div class="box__card">
+            <h3 class="title title-5">Room Type</h3>
+          </div>
+          <div class="box__card">
+            <h3 class="title title-5">Meal</h3>
+            <p class="small">Only for group consisting of 20 people or more – need to order in advance</p>
+          </div>
+          <div class="box__card">
+            <h3 class="title title-5">Other services</h3>
+          </div>
+        </div>
+
+        <div class="accommodation__info">
+          <h4 class="title title-6">
+            INFORMATION NOTICE
+          </h4>
+          <p>According to the Sales Registration Act, the seller is obliged to issue a receipt to the buyer. At the same time, he is obliged to register the received sales with the tax administrator online, within 48 hours in the event of a technical failure</p>
+          <p>*Prices do not include city tax (<span class="bold">20CZK</span> per person per day). This tax does not apply to guests under 18 or over 65 years of age. Valid from 1.1. 2022.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @@include('blocks/footer.html')
+
+</body>
+
+</html>
