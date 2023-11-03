@@ -35,6 +35,8 @@
     "last 5 versions"
   ],
   "dependencies": {
-    "air-datepicker": "^3.4.0"
+    "@easepick/bundle": "^1.2.1",
+    "air-datepicker": "^3.4.0",
+    "choices.js": "^10.2.0"
   }
 }
