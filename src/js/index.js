@@ -1,10 +1,14 @@
-// import 'air-datepicker/air-datepicker.css';
-// import AirDatepicker from 'air-datepicker';
-import { hello } from "./modules/hello";
+// import { hello } from "./modules/hello";
 
-console.log(hello);
+import { datePickerCheckIn, datePickerCheckOut } from "./modules/datePicker";
 
+// console.log(hello);
 
-// document.addEventListener('DOMContentLoaded', () => {
-// 	new AirDatepicker('#my-element');
-// });
+const init = () => {
+  datePickerCheckIn();
+  datePickerCheckOut();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  init();
+});
