@@ -1,15 +1,22 @@
 .header {
   padding-top: 48px;
   padding-bottom: 24px;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 
   &__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 24px;
   }
 
-  // &__logo {}
+  &__logo {
+    display: block;
+  }
 
   &__logo-img {
     max-width: 180px;
@@ -25,7 +32,10 @@
   &__nav-list {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px 24px;
   }
 
   &__nav-item {
@@ -34,7 +44,36 @@
 
   &__nav-link {
     display: block;
+
+    &:hover,
+    &:active {
+      color: var(--orange);
+    }
   }
 
-  // &__btn {}
+  &__nav-select {
+    align-self: center;
+    min-width: 95px;
+    padding: 14px 8px;
+    border-radius: 10px;
+    background: #FAFAFA;
+  }
+
+  &__btn {
+    align-self: center;
+    background: linear-gradient(90deg, #1E3C72 0%, #2A5298 100%);
+  }
+}
+
+
+.select {
+  width: 100%;
+  // appearance: none;
+  // -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+
+  &__option {
+    margin: 20px;
+  }
 }
