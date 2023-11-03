@@ -59,6 +59,10 @@
     background: #FAFAFA;
   }
 
+  &__nav-btns {
+    display: flex;
+  }
+
   &__btn {
     align-self: center;
     background: linear-gradient(90deg, #1E3C72 0%, #2A5298 100%);

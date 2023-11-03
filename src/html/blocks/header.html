@@ -33,9 +33,17 @@
         </select>
       </div>
 
-      <button class="button header__btn" type="button">
-        @@include('./elements/button.html')
-      </button>
+      <div class="header__nav-btns">
+        <button class="button header__btn" type="button">
+          @@include('./elements/button.html')
+        </button>
+        <div class="nav__icon">
+          <button class="mobile-nav-btn">
+            <div class="nav-icon"></div>
+          </button>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
+@@include('mobile-nav.html')
