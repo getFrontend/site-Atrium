@@ -1,0 +1,42 @@
+.form-hero {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &__label {
+    display: grid;
+    gap: 8px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+  }
+  
+  &__input {
+    width: 100%;
+    padding: 16px 8px;
+    border-radius: 10px;
+    border: 1px solid #E7E7E7;
+    background: #F6F6F6;
+    background-image: url('./../img/icons/icon-calendar.svg');
+    background-position: calc(100% - 8px) 50%;
+    /* x y */
+    background-size: auto;
+    background-repeat: no-repeat;
+    cursor: default;
+    
+    &::placeholder {
+      color: var(--black);
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  &__btn {
+    align-self: flex-end;
+    background: linear-gradient(90deg, #1E3C72 0%, #2A5298 100%);
+  }
+}
