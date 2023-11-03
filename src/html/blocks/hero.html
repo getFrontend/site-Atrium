@@ -1,15 +1,29 @@
 <section class="hero">
   <div class="container hero__container">
     <div class="hero__content">
-      <h1 class="title title-1">Discover <span class="text-gradient">
-        Trutnov</span>'s Hidden Gem
+      <h1 class="title title-1 hero__title">Discover <span class="text-gradient">
+          Trutnov</span>'s Hidden Gem
       </h1>
       <p class="hero__text">
-        Our prime and affordable location near the historical center of Trutnov ensures convenience and easy access to all the attractions the city has to offer.
+        Our prime and affordable location near the historical center of Trutnov ensures convenience and easy access to
+        all the attractions the city has to offer.
       </p>
 
-      <form class="hero__form" action="">
+      <form class="form-hero hero__form" action="">
+        <label class="form-hero__label">
+          <span>Check-in:</span>
+          <input class="form-hero__input" id="check-in" name="check-in-date" type="text" placeholder="Check-in Date"
+            autocomplete="off">
+        </label>
+        <label class="form-hero__label">
+          <span>Check-out:</span>
+          <input class="form-hero__input" id="check-out" name="check-out-date" type="text" placeholder="Check-out Date"
+            autocomplete="off">
+        </label>
 
+        <button class="button form-hero__btn" type="button">
+          @@include('./elements/button.html')
+        </button>
       </form>
     </div>
 
