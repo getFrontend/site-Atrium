@@ -96,8 +96,8 @@ gulp.task('sass:docs', function () {
     .pipe(plumber(plumberNotify('SCSS')))
     .pipe(sassGlob())
     .pipe(sass())
-    .pipe(groupMedia())
-    .pipe(webpCss())
+    // .pipe(groupMedia())
+    // .pipe(webpCss())
     .pipe(autoprefixer())
     .pipe(csso())
     .pipe(gulp.dest('./docs/css/'));
