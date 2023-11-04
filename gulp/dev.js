@@ -52,7 +52,7 @@ gulp.task('html:dev', function () {
     [
       './src/html/**/*.html',
       // exclude the Blocks folder
-      '!./src/html/blocks/*.html',
+      '!./src/html/blocks/**/*.html',
     ]
   )
     .pipe(changed(
@@ -110,7 +110,11 @@ gulp.task('fonts:dev', function () {
 /** Compile other files */
 gulp.task('files:dev', function () {
   return gulp
-    .src('./src/files/**/*')
+    .src([
+      './src/files/**/*',
+      // exclude JSON data
+      '!./src/files/data/*',
+    ])
     .pipe(changed('./build/files/'))
     .pipe(gulp.dest('./build/files/'))
 });

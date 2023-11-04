@@ -62,7 +62,7 @@ gulp.task('html:docs', function () {
     [
       './src/html/**/*.html',
       // exclude the Blocks folder
-      '!./src/html/blocks/*.html',
+      '!./src/html/blocks/**/*.html',
     ]
   )
     .pipe(changed('./docs/'))
@@ -130,7 +130,11 @@ gulp.task('fonts:docs', function () {
 /** Compile other files */
 gulp.task('files:docs', function () {
   return gulp
-    .src('./src/files/**/*')
+    .src([
+      './src/files/**/*',
+      // exclude JSON data
+      '!./src/files/data/*',
+    ])
     .pipe(changed('./docs/files/'))
     .pipe(gulp.dest('./docs/files/'))
 });
