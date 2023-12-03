@@ -1,3 +1,3 @@
 ## About
 
-Website made for the pension ÁTRIUM.
+Website made for the pension ÁTRIUM in Trutnov.
